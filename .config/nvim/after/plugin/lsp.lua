@@ -10,7 +10,12 @@ lsp.nvim_workspace()
 
 lsp.ensure_installed({
 	'rust_analyzer',
-	'solidity_ls'
+	'solidity_ls',
+	'vtsls',
+	'html',
+	'ast_grep'
+
+
 })
 
 lsp.setup()

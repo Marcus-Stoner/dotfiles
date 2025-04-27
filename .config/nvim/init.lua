@@ -1,2 +1,5 @@
 require("marcus")
-print("hello")
+
+vim.opt.splitright = true
+
+

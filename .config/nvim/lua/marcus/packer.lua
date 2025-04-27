@@ -45,4 +45,17 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme rose-pine')
 	  end
   })
+
+  use({
+    "stevearc/oil.nvim",
+    config = function()
+      require("oil").setup()
+    end,
+  })   
+   
+  
+
+
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use('nvim-treesitter/playground')
 end)

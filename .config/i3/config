@@ -210,12 +210,15 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+b exec "firefox"
 bindsym $mod+shift+b exec "firefox --private-window"
 bindsym $mod+shift+Return exec --no-startup-id alacritty --class floating
+#bindsym $mod+shift+o exec --no-startup-id firefox --no-sandbox -new-window "http://127.0.0.1:3000/" --class floating
+bindsym $mod+shift+o exec --no-startup-id google-chrome --class="floatingchrome" -incognito -new-window http://127.0.0.1:3000/
 #bindsym $mod+n exec --no-startup-id nautilus 
 bindsym $mod+n exec --no-startup-id nautilus -w
 
 #enables floating class
 #for_window [class="floating"] floating enabled move position center
 for_window [class=floating] floating enabled move position center
+for_window [class=floatingchrome] floating enable, move position center, resize set 1200 800
 for_window [class="org.gnome.Nautilus"] floating enabled move position center
 
 

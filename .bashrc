@@ -123,7 +123,7 @@ alias bat='batcat'
 alias python='python3'
 alias vim='nvim'
 
-alias vimsearch='vim $(fzf --preview "batcat --color=always {}")'
+alias vimsearch='nvim $(fzf --preview "batcat --color=always {}")'
 
 export PATH="$PATH:/home/marcus/.foundry/bin"
 
@@ -143,4 +143,4 @@ export FZF_DEFAULT_OPTS="
 	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
 
 export BAT_THEME="rose-pine"
-target=
+target=10.10.203.115
