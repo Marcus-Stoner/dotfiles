@@ -58,4 +58,9 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
+  use({
+  "nvimtools/none-ls.nvim", -- Updated fork of null-ls.nvim
+  requires = { "nvim-lua/plenary.nvim" },
+	})
+
 end)
