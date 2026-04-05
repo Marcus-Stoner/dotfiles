@@ -13,7 +13,9 @@ lsp.ensure_installed({
 	'solidity_ls',
 	'vtsls',
 	'html',
-	'ast_grep'
+	"gopls",
+	'ast_grep',
+	'lemminx'
 
 
 })

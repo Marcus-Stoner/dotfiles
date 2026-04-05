@@ -122,6 +122,8 @@ alias cd='z'
 alias bat='batcat'
 alias python='python3'
 alias vim='nvim'
+alias ls='eza --icons'
+alias cat='batcat -p -P'
 
 alias vimsearch='nvim $(fzf --preview "batcat --color=always {}")'
 
@@ -131,6 +133,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
+
 
 export PATH="$PATH:/home/marcus/.cyfrin/bin"
 export PATH=$PATH:/home/marcus/go/bin
@@ -143,4 +146,7 @@ export FZF_DEFAULT_OPTS="
 	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
 
 export BAT_THEME="rose-pine"
-target=10.10.203.115
+target=10.10.9.20
+
+# opencode
+export PATH=/home/marcus/.opencode/bin:$PATH
